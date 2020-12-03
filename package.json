@@ -1,7 +1,7 @@
 {
-  "name": "v-4",
+  "name": "peninsula",
   "version": "1.0.0",
-  "description": "Boilerplate with just TS and nothing else",
+  "description": "WebGL Game Engine",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html -p 9000",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/leRenard/v-4.git"
+    "url": "git+ssh://git@gitlab.com/leRenard/peninsula.git"
   },
   "author": "Daniele Tabanella",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/leRenard/v-4/issues"
+    "url": "https://gitlab.com/leRenard/peninsula/issues"
   },
-  "homepage": "https://gitlab.com/leRenard/v-4#readme",
+  "homepage": "https://gitlab.com/leRenard/peninsula#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
