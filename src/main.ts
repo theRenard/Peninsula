@@ -1,10 +1,11 @@
+import initRenderingContext  from '~/initRenderingContext';
+import initSquareBuffer  from '~/initSquareBuffer';
+import initSimpleShader from './initSimpleShader';
 
-// Get canvas element
-const canvas = document.getElementById("GLCanvas") as HTMLCanvasElement;
+// get WebGLRenderingContext
+const gGl = initRenderingContext('GLCanvas');
 
-// Get webgl context from canvas
-const gl = canvas.getContext("webgl") as WebGLRenderingContext;
+// create a square as Vertex Buffer
+const gSquareVertexBuffer = initSquareBuffer(gGl);
 
-
-gl.clearColor(0.0, 0.8, 0.0, 1.0);  // set the color to be cleared
-gl.clear(gl.COLOR_BUFFER_BIT);   // clear the colors
+initSimpleShader(gSquareVertexBuffer, 'VertexShader', 'FragmentShader', gGl);
